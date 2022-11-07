@@ -1,12 +1,9 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def index():
-    return "Hello, world!"
+def print_num(x):
+    print(x)
+    
 
 
 if __name__ == "__main__":
-    app.run()
+    num=input()
+    print_num(num)
 
